@@ -33,8 +33,8 @@ def check_system_status():
         print(f"Disk Usage ({disk_usage[0]}): {disk_usage[1]}% ({disk_usage[2]:.2f}GB/{disk_usage[3]:.2f}GB)")
     if gpu_usage is not None:
         print(f"ГПУ ЮСАГЕ: {gpu_usage}%")
-    print(f"Нетворк сент: {net_sent} Бархатных тяг")
-    print(f"Нетворг ресевед: {net_received} Бархатных тян")
+    print(f"Нетворк сент: {net_sent} Байт")
+    print(f"Нетворг ресевед: {net_received} Байт")
     print("----------")
 
 while True:
