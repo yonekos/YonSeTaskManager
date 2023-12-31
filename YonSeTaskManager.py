@@ -27,14 +27,14 @@ def check_system_status():
     disk_usage_list = []
 
         
-    print(f"Процессор Юсаге: {cpu_percent}%")
-    print(f"ОЗУ Юсагe: {memory_percent}% ({memory_used:.2f}ГБ/{memory_total:.2f}ГБ)")
+    print(f"Использование процессора: {cpu_percent}%")
+    print(f"Использование ОЗУ: {memory_percent}% ({memory_used:.2f}ГБ/{memory_total:.2f}ГБ)")
     for disk_usage in disk_usage_list:
         print(f"Disk Usage ({disk_usage[0]}): {disk_usage[1]}% ({disk_usage[2]:.2f}GB/{disk_usage[3]:.2f}GB)")
     if gpu_usage is not None:
-        print(f"ГПУ ЮСАГЕ: {gpu_usage}%")
-    print(f"Нетворк сент: {net_sent} Байт")
-    print(f"Нетворг ресевед: {net_received} Байт")
+        print(f"Использование GPU: {gpu_usage}%")
+    print(f"Отправлено: {net_sent} Байт")
+    print(f"Получено: {net_received} Байт")
     print("----------")
 
 while True:
